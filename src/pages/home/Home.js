@@ -88,7 +88,7 @@ export default function Home({ history }) {
 
   const logout = () => {
     authDispatch({ type: 'LOGOUT' })
-    window.location.href = 'https://chat-app-node-mysql-graphql-react.netlify.app'
+    window.location.href = '/'
   }
 
   return (
