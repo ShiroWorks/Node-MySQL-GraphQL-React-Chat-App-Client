@@ -31,7 +31,7 @@ httpLink = authLink.concat(httpLink)
 const host = window.location.host
 
 const wsLink = new WebSocketLink({
-  uri: `wss://${host}/graphql/`,
+  uri: `wss://${host}/https://node-mysql-graphql-chat.herokuapp.com/`,
   options: {
     reconnect: true,
     connectionParams: {
