@@ -11,7 +11,7 @@ import { WebSocketLink } from '@apollo/client/link/ws'
 import { getMainDefinition } from '@apollo/client/utilities'
 
 let httpLink = createHttpLink({
-  uri: 'https://node-mysql-graphql-chat.herokuapp.com/',
+  uri: 'https://node-mysql-graphql-chat-app.herokuapp.com/',
 })
 
 const authLink = setContext((_, { headers }) => {
@@ -31,7 +31,7 @@ httpLink = authLink.concat(httpLink)
 const host = window.location.host
 
 const wsLink = new WebSocketLink({
-  uri: `wss://node-mysql-graphql-chat.herokuapp.com/`,
+  uri: `wss://node-mysql-graphql-chat-app.herokuapp.com/`,
   options: {
     reconnect: true,
     connectionParams: {
