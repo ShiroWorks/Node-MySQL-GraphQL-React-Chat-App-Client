@@ -37,7 +37,7 @@ const wsLink = new WebSocketLink({
     connectionParams: {
       Authorization: `Bearer ${localStorage.getItem('token')}`,
     },
-    transports: ['websocket']
+   
   },
 })
 
